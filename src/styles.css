@@ -1,0 +1,84 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* App container */
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Rating form styles */
+  .RatingForm {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .RatingForm h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .RatingForm label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .RatingForm .rating-stars {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .RatingForm .rating-star {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .RatingForm .rating-star:last-child {
+    margin-right: 0;
+  }
+  
+  .RatingForm button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .RatingForm button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Thank you message styles */
+  .ThankYouMessage {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ThankYouMessage h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .ThankYouMessage p {
+    margin-bottom: 10px;
+  }
+  
+  .ThankYouMessage .rating-value {
+    font-weight: bold;
+  }
+  
