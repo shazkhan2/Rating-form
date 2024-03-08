@@ -1,6 +1,12 @@
 /* Global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Overpass', sans-serif; 
+  font-family: "Overpass", sans-serif;
   color: #ffffff;
 }
 
@@ -10,15 +16,15 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #141519; 
+  width: 100%;
+  background-color: #141519;
 }
 
 /* Rating form styles */
 .rating-form {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
   background: #222731;
   color: white;
   flex-direction: column;
@@ -35,6 +41,7 @@ body {
 .rating-options {
   display: flex;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .rating-option {
@@ -44,13 +51,13 @@ body {
   display: grid;
   place-content: center;
   cursor: pointer;
-  background: #4a5568; 
-  color: #cbd5e0; 
+  background: #4a5568;
+  color: #cbd5e0;
   transition: background 0.3s ease;
 }
 
 .rating-option.selected {
-  background: #ed8936; 
+  background: #ed8936;
   color: white;
 }
 
@@ -58,7 +65,7 @@ button {
   width: 100%;
   padding: 0.75rem;
   border-radius: 1.5rem;
-  background: #ed8936; 
+  background: #ed8936;
   color: white;
   border: none;
   cursor: pointer;
@@ -67,57 +74,85 @@ button {
 
 button:hover {
   background: white;
-  color: #ed8936; 
+  color: #ed8936;
 }
 
 /* Thank you message styles */
 .thank-you-message {
   width: 100%;
-  max-width: 50%; 
+  max-width: 40vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #222731;
-  padding: 2rem;
+  gap: 0.5rem;
+  padding: 1rem;
   border-radius: 1.5rem;
 }
 
+
 .thank-you-illustration {
-  width: 6.5rem; 
-  height: 7rem; 
+  width: 6.5rem;
+  height: 7rem;
 }
 
 .thank-you-message h1 {
   font-size: 1.5rem;
-  font-weight: bold; 
+  font-weight: bold;
   color: white;
   text-align: center;
 }
 
 .thank-you-message p {
-  font-size: 0.875rem; 
-  color: #a0aec0; 
+  font-size: 0.875rem;
+  color: #a0aec0;
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  .rating-form,
-  .thank-you-message {
-    padding: 0.5rem; 
-    border-radius: 0; 
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  #root {
-    padding-left: 30%;
-    padding-right: 30%;
-  }
-}
-
-@media screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
+  /* Responsive styles for smaller screens */
   #root {
     padding-left: 0;
     padding-right: 0;
+  }
+  .rating-form,
+  .thank-you-message {
+    padding: 3.5rem;
+    border-radius: 1rem;
+  }
+  .thank-you-message {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: #222731;
+  }
+
+  .rating-form {
+    height: 70vh; /* Adjust form height for smaller screens */
+    padding: 2rem;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ratingForm {
+    grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+  }
+  .thank-you-message {
+    width: 100%;
+    height: 70vh;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #222731;
+    padding: 0rem;
+    gap: 0.5rem;
+    border-radius: 1.5rem;
   }
 }
