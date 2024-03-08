@@ -1,84 +1,123 @@
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
+  font-family: 'Overpass', sans-serif; 
+  color: #ffffff;
+}
+
+/* App container */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #141519; 
+}
+
+/* Rating form styles */
+.rating-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222731;
+  color: white;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+.star-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.rating-options {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.rating-option {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  background: #4a5568; 
+  color: #cbd5e0; 
+  transition: background 0.3s ease;
+}
+
+.rating-option.selected {
+  background: #ed8936; 
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 1.5rem;
+  background: #ed8936; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: white;
+  color: #ed8936; 
+}
+
+/* Thank you message styles */
+.thank-you-message {
+  width: 100%;
+  max-width: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222731;
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+
+.thank-you-illustration {
+  width: 6.5rem; 
+  height: 7rem; 
+}
+
+.thank-you-message h1 {
+  font-size: 1.5rem;
+  font-weight: bold; 
+  color: white;
+  text-align: center;
+}
+
+.thank-you-message p {
+  font-size: 0.875rem; 
+  color: #a0aec0; 
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .rating-form,
+  .thank-you-message {
+    padding: 0.5rem; 
+    border-radius: 0; 
   }
-  
-  /* App container */
-  .App {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 1400px) {
+  #root {
+    padding-left: 30%;
+    padding-right: 30%;
   }
-  
-  /* Rating form styles */
-  .RatingForm {
-    max-width: 600px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 750px) {
+  #root {
+    padding-left: 0;
+    padding-right: 0;
   }
-  
-  .RatingForm h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .RatingForm label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  .RatingForm .rating-stars {
-    display: flex;
-    margin-bottom: 20px;
-  }
-  
-  .RatingForm .rating-star {
-    font-size: 24px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  
-  .RatingForm .rating-star:last-child {
-    margin-right: 0;
-  }
-  
-  .RatingForm button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .RatingForm button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Thank you message styles */
-  .ThankYouMessage {
-    max-width: 600px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .ThankYouMessage h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .ThankYouMessage p {
-    margin-bottom: 10px;
-  }
-  
-  .ThankYouMessage .rating-value {
-    font-weight: bold;
-  }
-  
+}
