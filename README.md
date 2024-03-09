@@ -2,5 +2,5 @@ The Rating-Form is a React-based web application allowing users to submit rating
 
 <img width="392" alt="image" src="https://github.com/shazkhan2/Rating-form/assets/115549210/521ef5cd-82b5-4bec-be47-e61027c9d095">
 
-<img width="392" alt="image" src="https://github.com/shazkhan2/Rating-form/assets/115549210/eda1655b-8535-40b9-94b4-552598fe9594">
+<img width="266" alt="image" src="https://github.com/shazkhan2/Rating-form/assets/115549210/eda1655b-8535-40b9-94b4-552598fe9594">
 
