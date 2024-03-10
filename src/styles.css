@@ -124,7 +124,6 @@ button:hover {
 
 
 @media only screen and (max-width: 768px) {
-  /* Responsive styles for smaller screens */
   #root {
     padding-left: 0;
     padding-right: 0;
@@ -144,7 +143,7 @@ button:hover {
   }
 
   .rating-form {
-    height: 70vh; /* Adjust form height for smaller screens */
+    height: 70vh; 
     padding: 2rem;
     justify-content: center;
     flex-direction: column;
